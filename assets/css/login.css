@@ -11,6 +11,10 @@
 .logoBox span{
 
 }
+.form-control {
+    background-color: #e6e6e6 !important;
+    border-color: #bbbcbc !important;
+}
 @media(max-width:991.98px) {
     .logoBox img {
         max-height: 25px;

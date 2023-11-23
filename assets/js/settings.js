@@ -33,3 +33,18 @@ function showmenumobile() {
     $(".mobmenubg").show();
     $(".sidebar").show();
 }
+
+function login() {
+    $(".loginBox").slideUp();
+    $(".otpBox").slideDown();
+    setToastMsg("Login successfully","An email with a verification code has been sent on your registered email id.")
+}
+
+function setToastMsg(toasteading,toastTitle) {
+    $(".toastheading").empty();
+    $(".toast-body").empty();
+
+    $(".toastheading").append(toasteading);
+    $(".toast-body").append(toastTitle);
+    $('#liveToast').toast('show');
+}

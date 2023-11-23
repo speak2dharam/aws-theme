@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/icofont.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet" />
     <link href="assets/css/login.css" rel="stylesheet" />
+    <link href="assets/libs/wow/animate.css" rel="stylesheet" />
 </head>
 <body>
     <section>
@@ -29,12 +30,12 @@
                         <div>
                             <div class="row g-4 align-items-center">
                                 <div class="col-md border-end">
-                                    <h3 class="fw-bolder h4 mb-1">AWS Admin Portal</h3>
+                                    <h3 class="display-6 mb-1 fs-3">AWS Admin Portal</h3>
                                     <h6 class="">Welcome to the AWS Admin Portal</h6>
-                                    <img src="assets/img/AWS_banner.png" class="img-fluid d-md-block d-lg-block d-none" />
+                                    <img src="assets/img/AWS_banner.png" class="img-fluid d-md-block d-lg-block d-none wow flipInX center" />
                                 </div>
                                 <div class="col-md">
-                                    <div class="ps-1 ps-md-3 pe-2">
+                                    <div class="ps-1 ps-md-3 pe-2 loginBox">
                                         <div>
                                             <h3 class="fw-bolder h6 mb-3 mb-1">AWS Admin Portal</h3>
                                         </div>
@@ -49,10 +50,33 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <button class="btn btn-info bg-gradient w-100 fw-bold">Log In</button>
+                                            <button class="btn btn-info bg-gradient w-100 fw-bold" onclick="login()">Log In</button>
                                         </div>
                                         <div class="text-end">
                                             <a href="#" class="btn btn-link pe-0">Forgot password?</a>
+                                        </div>
+                                    </div>
+                                    <div class="ps-1 ps-md-3 pe-2 otpBox" style="display:none;">
+                                        <div>
+                                            <a href="javascript:void()" class="btn btn-outline-dark btn-sm py-1"><i class="icofont-arrow-left"></i> Back to login page</a>
+                                            <h3 class="fw-bolder h5 mb-1 mt-3">2 Step Verification</h3>
+                                            <p class="lead mb-1"><strong>Enter a verification code</strong></p>
+                                            <div class="alert alert-success" role="alert">
+                                                An email with a verification code has been sent on your registered email id.
+                                            </div>
+                                            <!--<p>An email with a verification code has been sent on your registered email id.</p>-->
+                                        </div>
+                                        <div>
+                                            <div class="form-floating mb-3">
+                                                <input type="password" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                                <label for="floatingInput">Enter verification code</label>
+                                            </div>
+                                        </div>
+                                        <div class="mb-2">
+                                            <button class="btn btn-info bg-gradient w-100 fw-bold">Submit</button>
+                                        </div>
+                                        <div class="text-end">
+                                            Didn't Receive the Code? <a href="#" class="">Resend Code </a>
                                         </div>
                                     </div>
                                 </div>
@@ -63,9 +87,29 @@
             </div>
         </div>
     </section>
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <svg class="bd-placeholder-img rounded me-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#007aff"></rect></svg>
+                <strong class="me-auto toastheading">Bootstrap</strong>
+                <!--<small>11 mins ago</small>-->
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Hello, world! This is a toast message.
+            </div>
+        </div>
+    </div>
+    <!--  -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- bootstrap@5.3.2 -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/libs/wow/wow.min.js"></script>
+    <script src="assets/js/settings.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>
