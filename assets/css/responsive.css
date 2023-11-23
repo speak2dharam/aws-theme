@@ -12,6 +12,13 @@
     .navbar-vertical-footer{
         display:none;
     }
+    .brandlogo img{
+        height: 20px;
+    }
+    .awslogo img{
+        max-height:22px
+    }
+
 }
 /* Extra small devices (phones, 576px and down) */
 @media (max-width: 575.98px) {

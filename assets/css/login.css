@@ -11,3 +11,8 @@
 .logoBox span{
 
 }
+@media(max-width:991.98px) {
+    .logoBox img {
+        max-height: 25px;
+    }
+}
