@@ -37,7 +37,7 @@ function showmenumobile() {
 function login() {
     $(".loginBox").slideUp();
     $(".otpBox").slideDown();
-    $("#mfacode").focus();
+    //$("#mfacode").focus();
     setToastMsg("Login successfully","An email with a verification code has been sent on your registered email id.")
 }
 
