@@ -41,6 +41,11 @@ function login() {
     setToastMsg("Login successfully","An email with a verification code has been sent on your registered email id.")
 }
 
+function backtologin() {
+    $(".loginBox").slideDown();
+    $(".otpBox").slideUp();
+}
+
 function setToastMsg(toasteading,toastTitle) {
     $(".toastheading").empty();
     $(".toast-body").empty();
