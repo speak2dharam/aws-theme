@@ -1,0 +1,13 @@
+﻿body {
+    /*background-color: #E5F2FF;*/
+    background-color: #F0F0F0
+}
+.loginRow{
+    height:100vh;
+}
+.logoBox img {
+    max-height: 40px;
+}
+.logoBox span{
+
+}
