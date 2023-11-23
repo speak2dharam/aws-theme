@@ -1,13 +1,14 @@
 ﻿@media(max-width:991.98px) {
-    .sidebar{
-        display:none;
-        position:fixed;
+    .sidebar {
+        display: none;
+        position: fixed;
+        width: 15.875rem !important;
     }
     .mmenu{
         display:block;
     }
     .mainContent {
-        width: 100%;
+        width: 100% !important;
     }
     .navbar-vertical-footer{
         display:none;
