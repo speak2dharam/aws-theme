@@ -98,6 +98,7 @@ body {
     height: calc(100vh - 52px);
     width: calc(100% - 15.875rem);
     transition:0.5s;
+    overflow-y:auto;
 }
 .navbar-vertical-collapsed .mainContent {
     width: calc(100% - 4rem);
@@ -1386,7 +1387,7 @@ body {
         top: 0;
         height: auto;
         min-height: 100%;
-        padding-top: var(--phoenix-navbar-top-height);
+        padding-top: 52px;
         padding-bottom: 4rem;
         width: 4rem
     }
