@@ -2,6 +2,12 @@ body {
     /*background-color: #E5F2FF;*/
     background-color: #F0F0F0
 }
+.brandlogo img{
+    height: 25px;
+}
+.awslogo img{
+    max-height:28px
+}
 .topbar {
     background-color: #232F3E;
 }
