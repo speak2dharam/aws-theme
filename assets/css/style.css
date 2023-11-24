@@ -89,6 +89,7 @@ body {
     /*position:relative;*/
     padding-bottom:4.5rem;
     display:block;
+    z-index:9;
 }
 
 .navbar-vertical-collapsed .sidebar{
