@@ -7,6 +7,32 @@
     if (menuStatus == 'false') {
         expandMenu();
     }
+
+
+    $('.toggle-btn').on('click', function () {
+        var target = $(this).data('target');
+        var $targetDiv = $('#' + target);
+
+        // Hide all divs except the one being toggled
+        $('.DetailBox').not($targetDiv).hide();
+
+        // Toggle visibility of the clicked div
+        $targetDiv.toggle();
+
+        // Add 'active' class to the clicked button and remove it from others
+        $('.toggle-btn').removeClass('ActivedownIco');
+        $(this).toggleClass('ActivedownIco');
+
+        // Close div if the same button is clicked again
+        //if ($targetDiv.is(':visible')) {
+        //    //$targetDiv.hide();
+        //    $(this).removeClass('ActivedownIco');
+        //}
+        
+    });
+
+
+
 });
 //function menuToggle() {
 //    $("body").toggleClass("navbar-vertical-collapsed");
@@ -54,3 +80,4 @@ function setToastMsg(toasteading,toastTitle) {
     $(".toast-body").append(toastTitle);
     $('#liveToast').toast('show');
 }
+

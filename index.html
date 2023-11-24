@@ -79,7 +79,7 @@
                   </a>
               </div>
           </div>
-          <div class="mainContent ps-2 pb-3">
+          <div class="mainContent ps-2 pb-5">
               <div class="border-bottom py-2 mb-3">
                   <div class="container-fluid">
                       <div class="row g-2 align-items-center justify-content-between">
@@ -94,11 +94,11 @@
                       </div>
                   </div>
               </div>
-              <div>
+              <div class="firstpge">
                   <div class="container-fluid">
                       <div class="row g-4">
                           <div class="col-12">
-                              <div class="shadow rounded-2 p-3 bg-white">
+                              <div class="shadow rounded-2 px-3 py-2 bg-white">
                                   <div class="row g-2 align-items-center">
                                       <div class="col-auto">
                                           <img src="assets/img/icons/data-collection-logo.png" />
@@ -108,13 +108,13 @@
                                           <p class="mb-0"><strong>Discover Inventory -</strong> Utilize data from on premisis tools or using discovery tools of your choice</p>
                                       </div>
                                       <div class="col text-end">
-                                          <a href="#" class="btn btn-outline-info btn-sm mb-1">
+                                          <a href="#" class="btn btn-outline-info btn-sm my-1">
                                               <img src="assets/img/logo/azure-migrate.png" />&nbsp;Azure migrate
                                           </a>
-                                          <a href="#" class="btn btn-outline-info btn-sm mb-1">
+                                          <a href="#" class="btn btn-outline-info btn-sm my-1">
                                               <img src="assets/img/logo/movere.png" />&nbsp;Movere
                                           </a>
-                                          <a href="#" class="btn btn-outline-info btn-sm mb-1">
+                                          <a href="#" class="btn btn-outline-info btn-sm my-1">
                                               <img src="assets/img/logo/lansweeper.png" />&nbsp;Lansweeper
                                           </a>
                                       </div>
@@ -125,7 +125,7 @@
                           </div>
                           <div class="col-12">
                               <div class="shadow rounded-2 overflow-hidden bg-white">
-                                  <div class="p-3">
+                                  <div class="px-3 py-2 position-relative mainBox">
                                       <div class="row g-2 align-items-center">
                                           <div class="col-auto">
                                               <img src="assets/img/logo/infra-assessment-logo.png" />
@@ -135,23 +135,28 @@
                                               <p class="mb-0">Assess your environment to evaluate cloud readiness, migration options, costs, TCO and more...</p>
                                           </div>
                                           <div class="col text-end">
-                                              <a href="#" class="btn btn-warning btn-sm mb-1">
+                                              <a href="#" class="btn btn-outline-info btn-sm my-1 restrictedBtn">
                                                   <i class="icofont-link-alt"></i>&nbsp;Lift &amp; Shift
+                                                  <span><i class="icofont-not-allowed"></i>Not Licensed</span>
                                               </a>
-                                              <a href="#" class="btn btn-warning btn-sm mb-1">
+                                              <a href="#" class="btn btn-outline-info btn-sm my-1">
                                                   <i class="icofont-link-alt"></i>&nbsp;Lift &amp; Shift (MLS)
                                               </a>
-                                              <a href="#" class="btn btn-warning btn-sm mb-1">
+                                              <a href="#" class="btn btn-outline-info btn-sm my-1">
                                                   <i class="icofont-link-alt"></i>&nbsp;TCO
                                               </a>
-                                              <a href="#" class="btn btn-warning btn-sm mb-1">
+                                              <a href="#" class="btn btn-outline-info btn-sm my-1">
                                                   <i class="icofont-link-alt"></i>&nbsp;Sustainability
                                               </a>
                                           </div>
                                       </div>
+                                      <a href="javascript:void()" class="downIco toggle-btn" data-target="box1">
+                                          <i class="icofont-thin-down ico1"></i>
+                                          <i class="icofont-thin-up ico2"></i>
+                                      </a>
                                   </div>
 
-                                  <div class="">
+                                  <div class="DetailBox" id="box1" style="display:none;">
                                       <div>
                                           <ul class="nav nav-tabs ps-3 bg-dark bg-opacity-25 pt-2" id="myTab" role="tablist">
                                               <li class="nav-item" role="presentation">
@@ -160,30 +165,212 @@
                                               <li class="nav-item" role="presentation">
                                                   <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Migration Assist</button>
                                               </li>
-                                              
+
                                           </ul>
                                           <div class="tab-content bg-dark bg-opacity-10" id="myTabContent">
                                               <div class="tab-pane fade show active p-3" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
                                                   <p class="mb-2">Get detailed summary about SQL MI and SQL Vcore available on premisis.</p>
-                                                  <a href="#" class="btn btn-warning btn-sm mb-1">
+                                                  <a href="#" class="btn btn-outline-dark btn-sm my-1">
                                                       <i class="icofont-link-alt"></i>&nbsp;SQL MI
                                                   </a>
-                                                  <a href="#" class="btn btn-warning btn-sm mb-1">
+                                                  <a href="#" class="btn btn-outline-dark btn-sm my-1">
                                                       <i class="icofont-link-alt"></i>&nbsp;SQL Vcore
                                                   </a>
                                               </div>
                                               <div class="tab-pane fade p-3" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
                                                   <p class="mb-2">Get detailed summary about Migration Assist Infrastructure and Applications.</p>
-                                                  <a href="#" class="btn btn-warning btn-sm mb-1">
+                                                  <a href="#" class="btn btn-outline-dark btn-sm my-1">
                                                       <i class="icofont-link-alt"></i>&nbsp;Infra 6R & Workload
                                                   </a>
-                                                  <a href="#" class="btn btn-warning btn-sm mb-1">
+                                                  <a href="#" class="btn btn-outline-dark btn-sm my-1">
                                                       <i class="icofont-link-alt"></i>&nbsp;Application 6R & Workload
                                                   </a>
                                               </div>
                                           </div>
                                       </div>
                                   </div>
+                              </div>
+                          </div>
+
+                          <div class="col-12">
+                              <div class="shadow rounded-2 overflow-hidden bg-white">
+                                  <div class="px-3 py-2 position-relative mainBox">
+                                      <div class="row g-2 align-items-center">
+                                          <div class="col-auto">
+                                              <img src="assets/img/logo/modernize-migrate-logo.png" />
+                                          </div>
+                                          <div class="col-auto">
+                                              <h6 class="display-6 fs-5 mb-1">Modernize & Migrate</h6>
+                                              <p class="mb-0">A range of App and DB modernization services incorporating best practices for managing migrations</p>
+                                          </div>
+                                          <div class="col text-end">
+                                              <a href="#" class="btn btn-outline-info btn-sm my-1">
+                                                  <i class="icofont-link-alt"></i>&nbsp;Lift &amp; Shift
+                                              </a>
+                                              <a href="#" class="btn btn-outline-info btn-sm my-1">
+                                                  <i class="icofont-link-alt"></i>&nbsp;Lift &amp; Shift (MLS)
+                                              </a>
+                                              <a href="#" class="btn btn-outline-info btn-sm my-1">
+                                                  <i class="icofont-link-alt"></i>&nbsp;TCO
+                                              </a>
+                                              <a href="#" class="btn btn-outline-info btn-sm my-1">
+                                                  <i class="icofont-link-alt"></i>&nbsp;Sustainability
+                                              </a>
+                                          </div>
+                                      </div>
+                                      <a href="javascript:void()" class="downIco toggle-btn" data-target="box2">
+                                          <i class="icofont-thin-down ico1"></i>
+                                          <i class="icofont-thin-up ico2"></i>
+                                      </a>
+                                  </div>
+
+                                  <div class="DetailBox" id="box2" style="display:none;">
+                                      <div>
+                                          <ul class="nav nav-tabs ps-3 bg-dark bg-opacity-25 pt-2" id="myTab2" role="tablist">
+                                              <li class="nav-item" role="presentation">
+                                                  <button class="nav-link active" id="home-tab2" data-bs-toggle="tab" data-bs-target="#home-tab-pane2" type="button" role="tab" aria-controls="home-tab-pane2" aria-selected="true">Data Estate</button>
+                                              </li>
+                                              <li class="nav-item" role="presentation">
+                                                  <button class="nav-link" id="profile-tab2" data-bs-toggle="tab" data-bs-target="#profile-tab-pane2" type="button" role="tab" aria-controls="profile-tab-pane2" aria-selected="false">Migration Assist</button>
+                                              </li>
+
+                                          </ul>
+                                          <div class="tab-content bg-dark bg-opacity-10" id="myTabContent2">
+                                              <div class="tab-pane fade show active p-3" id="home-tab-pane2" role="tabpanel" aria-labelledby="home-tab2" tabindex="0">
+                                                  <p class="mb-2">Get detailed summary about SQL MI and SQL Vcore available on premisis.</p>
+                                                  <a href="#" class="btn btn-outline-dark btn-sm my-1">
+                                                      <i class="icofont-link-alt"></i>&nbsp;SQL MI
+                                                  </a>
+                                                  <a href="#" class="btn btn-outline-dark btn-sm my-1">
+                                                      <i class="icofont-link-alt"></i>&nbsp;SQL Vcore
+                                                  </a>
+                                              </div>
+                                              <div class="tab-pane fade p-3" id="profile-tab-pane2" role="tabpanel" aria-labelledby="profile-tab2" tabindex="0">
+                                                  <p class="mb-2">Get detailed summary about Migration Assist Infrastructure and Applications.</p>
+                                                  <a href="#" class="btn btn-outline-dark btn-sm my-1">
+                                                      <i class="icofont-link-alt"></i>&nbsp;Infra 6R & Workload
+                                                  </a>
+                                                  <a href="#" class="btn btn-outline-dark btn-sm my-1">
+                                                      <i class="icofont-link-alt"></i>&nbsp;Application 6R & Workload
+                                                  </a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="col-12">
+                              <div class="shadow rounded-2 overflow-hidden bg-white">
+                                  <div class="px-3 py-2 position-relative mainBox">
+                                      <div class="row">
+                                          <div class="col-md">
+                                              <div class="position-relative">
+                                                  <div class="row g-2 align-items-center">
+                                                      <div class="col-auto">
+                                                          <img src="assets/img/logo/manage-optimize-logo.png" />
+                                                      </div>
+                                                      <div class="col">
+                                                          <h6 class="display-6 fs-5 mb-1">Cloud Optimization</h6>
+                                                          <p class="mb-0">Proactively monitor, optimize, maintain, ensure availability and improve performance of your cloud</p>
+                                                      </div>
+                                                      <div class="col-4 text-end">
+                                                          <a href="#" class="btn btn-outline-info btn-sm my-1">
+                                                              <i class="icofont-link-alt"></i>&nbsp;Finops Dashboard
+                                                          </a>
+                                                          <a href="#" class="btn btn-outline-info btn-sm my-1">
+                                                              <i class="icofont-link-alt"></i>&nbsp;Cost Control
+                                                          </a>
+                                                      </div>
+                                                  </div>
+                                                  <div class="RestrictedBox">
+                                                      <i class="icofont-not-allowed"></i>
+                                                      <span>License Expired</span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="col-md border-start">
+                                              <div class="position-relative">
+                                                  <div class="row g-2 align-items-center">
+                                                      <div class="col-auto">
+                                                          <img src="assets/img/logo/cloudsecurity-logo.png" />
+                                                      </div>
+                                                      <div class="col">
+                                                          <h6 class="display-6 fs-5 mb-1">Cloud Security</h6>
+                                                          <p class="mb-0">Identify the gaps in your cloud security position and get a detailed roadmap to follow for improvement</p>
+                                                      </div>
+                                                      <div class="col-4 text-end">
+                                                          <a href="#" class="btn btn-outline-info btn-sm my-1">
+                                                              <i class="icofont-link-alt"></i>&nbsp;Zero Trust
+                                                          </a>
+                                                          <a href="#" class="btn btn-outline-info btn-sm my-1">
+                                                              <i class="icofont-link-alt"></i>&nbsp;Sentinel
+                                                          </a>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+                                      <a href="javascript:void()" class="downIco toggle-btn" data-target="box3">
+                                          <i class="icofont-thin-down ico1"></i>
+                                          <i class="icofont-thin-up ico2"></i>
+                                      </a>
+                                  </div>
+
+                                  <div class="DetailBox" id="box3" style="display:none;">
+                                      <div>
+                                          <ul class="nav nav-tabs ps-3 bg-dark bg-opacity-25 pt-2" id="myTab3" role="tablist">
+                                              <li class="nav-item" role="presentation">
+                                                  <button class="nav-link active" id="home-tab3" data-bs-toggle="tab" data-bs-target="#home-tab-pane3" type="button" role="tab" aria-controls="home-tab-pane3" aria-selected="true">Data Estate</button>
+                                              </li>
+                                              <li class="nav-item" role="presentation">
+                                                  <button class="nav-link" id="profile-tab3" data-bs-toggle="tab" data-bs-target="#profile-tab-pane3" type="button" role="tab" aria-controls="profile-tab-pane3" aria-selected="false">Migration Assist</button>
+                                              </li>
+
+                                          </ul>
+                                          <div class="tab-content bg-dark bg-opacity-10" id="myTabContent3">
+                                              <div class="tab-pane fade show active p-3" id="home-tab-pane3" role="tabpanel" aria-labelledby="home-tab3" tabindex="0">
+                                                  <p class="mb-2">Get detailed summary about SQL MI and SQL Vcore available on premisis.</p>
+                                                  <a href="#" class="btn btn-outline-dark btn-sm my-1">
+                                                      <i class="icofont-link-alt"></i>&nbsp;SQL MI
+                                                  </a>
+                                                  <a href="#" class="btn btn-outline-dark btn-sm my-1">
+                                                      <i class="icofont-link-alt"></i>&nbsp;SQL Vcore
+                                                  </a>
+                                              </div>
+                                              <div class="tab-pane fade p-3" id="profile-tab-pane3" role="tabpanel" aria-labelledby="profile-tab3" tabindex="0">
+                                                  <p class="mb-2">Get detailed summary about Migration Assist Infrastructure and Applications.</p>
+                                                  <a href="#" class="btn btn-outline-dark btn-sm my-1">
+                                                      <i class="icofont-link-alt"></i>&nbsp;Infra 6R & Workload
+                                                  </a>
+                                                  <a href="#" class="btn btn-outline-dark btn-sm my-1">
+                                                      <i class="icofont-link-alt"></i>&nbsp;Application 6R & Workload
+                                                  </a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-12">
+                              <div class="shadow rounded-2 px-3 py-2 bg-white">
+                                  <div class="row g-2 align-items-center">
+                                      <div class="col-auto">
+                                          <img src="assets/img/logo/ai-innovation-logo.png" />
+                                      </div>
+                                      <div class="col-auto">
+                                          <h6 class="display-6 fs-5 mb-1">AI Innovation</h6>
+                                          <p class="mb-0">Harnesses the power of AI to revolutionize industry practices and unlock limitless potential in the cloud.</p>
+                                      </div>
+                                      <div class="col text-end">
+                                          <a href="#" class="btn btn-outline-info btn-sm my-1">
+                                              <i class="icofont-link-alt"></i>&nbsp;Visit Portal
+                                          </a>
+                                      </div>
+                                  </div>
+
+
                               </div>
                           </div>
                       </div>

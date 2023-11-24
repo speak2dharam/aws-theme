@@ -2285,3 +2285,83 @@ body {
     .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
         background-color: #e8e9e9;
     }
+.mainBox{
+    padding-right:4rem !important;
+}
+.downIco {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #252525;
+    display: inline-block;
+    outline: none;
+    text-decoration: none;
+    width: 3rem;
+    text-align: center;
+    transition: 0.5s;
+    font-size: 13px;
+    top: 0;
+    font-size: 35px;
+    padding-top: 0.8rem;
+    border-left: 2px solid #ededed;
+}
+
+    .downIco:hover {
+        background-color: #0dbcdc;
+    }
+.DetailBox{
+    transition:0.5s;
+}
+.ico2{
+    display:none;
+}
+.ActivedownIco {
+    background-color: #0dbcdc !important;
+    padding-top: 1.5rem !important;
+}
+    .ActivedownIco .ico1 {
+        display:none;
+    }
+    .ActivedownIco .ico2{
+        display: block;
+    }
+.firstpge .btn{
+    position:relative;
+}
+.restrictedBtn{
+    cursor:not-allowed !important;
+}
+    .restrictedBtn:hover {
+        background-color: none !important;
+        color: #0dcaf0
+    }
+    .restrictedBtn span i {
+        margin-right: 2px;
+    }
+    .restrictedBtn span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000000bd;
+        font-size: 11px;
+        padding: 5px 1px 1px 1px;
+    }
+.RestrictedBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffffad;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 2rem;
+    text-shadow: 3px 4px 7px #00000063;
+    font-weight: 500;
+}
+.RestrictedBox i{
+}
+.RestrictedBox span{
+}
