@@ -1,0 +1,237 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AWS</title>
+    <!-- bootstrap@5.3.2 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/icofont.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+</head>
+<body class="navbar-vertical-collapsed">
+    <section class="topbar">
+        <div class="container-fluid">
+            <div class="row g-2 align-items-center">
+                <div class="col-auto mmenu">
+                    <a href="javascript:void(0);" onclick="showmenumobile()">
+                        <img src="assets/img/icons/menu-bar.png" alt="">
+                    </a>
+                </div>
+                <div class="col-auto brandlogo">
+                    <img src="assets/img/uc-logo-white.png" />
+                </div>
+                <div class="col-auto border-start awslogo">
+                    <img src="assets/img/aws-logo-white.png" />
+                </div>
+                <div class="col text-end">
+                    <div class="dropdown profilebtn">
+                        <span class="" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/img/user.png" />
+                        </span>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="change-password.html" class="dropdown-item">Change Password</a>
+                            </li>
+
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a href="login.html" class="dropdown-item">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bottomSec">
+        <div class="mobmenubg">
+            <a href="javascript:void();" id="Closemenu" onclick="hidemenumobile()"><i class="icofont-close-line-squared-alt"></i></a>
+        </div>
+        <div class="sidebar">
+
+            <nav class="navbar navbar-vertical navbar-expand-lg">
+                <div class="" id="navbarVerticalCollapse">
+                    <!-- scrollbar removed-->
+                    <div class="navbar-vertical-content">
+                        <ul class="navbar-nav flex-column" id="navbarVerticalNav">
+
+
+
+                            <li class="nav-item">
+                                <div class="nav-item-wrapper">
+                                    <a class="nav-link label-1" href="index.html" role="button" data-bs-toggle="" aria-expanded="false">
+                                        <div class="d-flex align-items-center"><span class="nav-link-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-table"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"></path></svg></span><span class="nav-link-text-wrapper"><span class="nav-link-text">Dashboard</span></span></div>
+                                    </a>
+                                </div><!-- parent pages-->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="navbar-vertical-footer">
+                <a href="javascript:void()" id="expandMenu" onclick="expandMenu()" style="display:none;">
+                    <img src="assets/img/icons/right-align.png" style="height:20px" />
+                </a>
+                <a href="javascript:void()" id="collapseMenu" onclick="collapseMenu()">
+                    <img src="assets/img/icons/left-align.png" style="height:20px" />
+                    <span>Collapsed view</span>
+                </a>
+            </div>
+        </div>
+        <div class="mainContent ps-2 pb-5">
+            <div class="border-bottom py-2 mb-3">
+                <div class="container-fluid">
+                    <div class="row g-2 align-items-center justify-content-between">
+                        <div class="col-auto">
+                            <h6 class="mb-0">MANAGE PARTNER</h6>
+                        </div>
+                        <div class="col-auto">
+                            <div>
+                                <input type="text" class="form-control form-control-sm" placeholder="Search Partner" name="name" value="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="firstpge">
+                <div class="container-fluid">
+                    <div class="row g-4">
+                        
+                        <div class="col-12">
+                            <div class="shadow rounded-2 overflow-hidden bg-white">
+                                <div class="px-3 py-2 position-relative mainBox">
+                                    <div class="row g-2">
+                                        <div class="col-auto">
+                                            <span class="PrtntSpan"></span>
+                                        </div>
+                                        <div class="col-auto">
+                                            <h6 class="fs-5 mb-1"><a href="#" class="text-dark" style="outline:none;text-decoration:none">Microsoft-Germany</a></h6>
+                                            <div class="d-inline-flex">
+                                                <div>
+                                                    <span>Name : <strong>Hugo Mo</strong></span>
+                                                </div>
+                                                <div class="border-start ps-2 ms-2">
+                                                    <span>User ID : <strong>cloudsupport@multisoft.com.hk</strong></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="DetailBox" id="box1">
+                                    <div>
+                                        <ul class="nav nav-tabs ps-3 bg-dark bg-opacity-50 bg-gradient pt-2" id="myTab" role="tablist">
+                                            <li class="nav-item me-1" role="presentation">
+                                                <button class="nav-link active px-2 py-1" id="tab-1" data-bs-toggle="tab" data-bs-target="#tab-pane-1" type="button" role="tab" aria-controls="tab-pane-1" aria-selected="true">
+                                                    <img src="assets/img/logo/infra-assessment-logo.png" height="22" /> Rapid and Advance Migration (Apps, Data and Infra)
+                                                </button>
+                                            </li>
+                                            <li class="nav-item me-1" role="presentation">
+                                                <button class="nav-link px-2 py-1" id="tab-2" data-bs-toggle="tab" data-bs-target="#tab-pane-2" type="button" role="tab" aria-controls="tab-pane-2" aria-selected="false">
+                                                    <img src="assets/img/logo/modernize-migrate-logo.png" height="22" /> Applications and Databases  Modernization
+                                                </button>
+                                            </li>
+                                            <li class="nav-item me-1" role="presentation">
+                                                <button class="nav-link px-2 py-1" id="tab-3" data-bs-toggle="tab" data-bs-target="#tab-pane-3" type="button" role="tab" aria-controls="tab-pane-3" aria-selected="false">
+                                                    <img src="assets/img/logo/manage-optimize-logo.png" height="22" /> Cloud Optimization
+                                                </button>
+                                            </li>
+                                            <li class="nav-item me-1" role="presentation">
+                                                <button class="nav-link px-2 py-1" id="tab-4" data-bs-toggle="tab" data-bs-target="#tab-pane-4" type="button" role="tab" aria-controls="tab-pane-4" aria-selected="false">
+                                                    <img src="assets/img/logo/cloudsecurity-logo.png" height="22" /> Cloud Security
+                                                </button>
+                                                <div class="RestrictedBox">
+                                                    <i class="icofont-not-allowed"></i>
+                                                    <span>Not Licensed</span>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link px-2 py-1" id="tab-5" data-bs-toggle="tab" data-bs-target="#tab-pane-5" type="button" role="tab" aria-controls="tab-pane-5" aria-selected="false">
+                                                    <img src="assets/img/logo/reporting-logo.png" height="22" /> Licensing
+                                                </button>
+                                                
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active p-3" id="tab-pane-1" role="tabpanel" aria-labelledby="tab-1" tabindex="0">
+                                                <!-- 1st Tab -->
+                                                <h6>Advance Migration(Infra & Apps)</h6>
+                                                <p class="mb-1">Assess your environment to evaluate cloud readiness, migration options, costs, TCO and more...</p>
+                                                <a href="#" class="btn btn-outline-dark btn-sm my-1">
+                                                    <img src="assets/img/svg/dashboard.svg" height="16" />&nbsp;View Dashboard
+                                                </a>
+                                            </div>
+                                            <div class="tab-pane fade p-3" id="tab-pane-2" role="tabpanel" aria-labelledby="tab-2" tabindex="0">
+                                                <!-- 2nd Tab -->
+                                                <h6>Applications and Databases Modernization</h6>
+                                                <p class="mb-1">A range of application modernization services incorporating best practices for managing migrations</p>
+                                                <a href="#" class="btn btn-outline-dark btn-sm my-1">
+                                                    <img src="assets/img/maximize.png" height="16" />&nbsp;App & DB Modernize
+                                                </a>
+                                            </div>
+                                            <div class="tab-pane fade p-3" id="tab-pane-3" role="tabpanel" aria-labelledby="tab-3" tabindex="0">
+                                                <!-- 3rd Tab -->
+                                                <h6>Manage & Optimize</h6>
+                                                <p class="mb-1">Proactively monitor, optimize, maintain, ensure availability and improve performance of your cloud environment</p>
+                                                <a href="#" class="btn btn-outline-dark btn-sm my-1">
+                                                    <img src="assets/img/svg/dashboard.svg" height="16" />&nbsp;View Dashboard
+                                                </a>
+                                            </div>
+                                            <div class="tab-pane fade p-3" id="tab-pane-4" role="tabpanel" aria-labelledby="tab-4" tabindex="0">
+                                                <!-- 4th Tab -->
+                                                <h6>Cloud Security</h6>
+                                                <p class="mb-1">Identify the gaps in your cloud security position and get a detailed roadmap for improvement.</p>
+                                                <a href="#" class="btn btn-outline-dark btn-sm my-1">
+                                                    <img src="assets/img/svg/dashboard.svg" height="16" />&nbsp;View Dashboard
+                                                </a>
+                                            </div>
+                                            <div class="tab-pane fade p-3" id="tab-pane-5" role="tabpanel" aria-labelledby="tab-5" tabindex="0">
+                                                <!-- 5th Tab -->
+                                                <div class="mt-2">
+                                                    <div class="licDiv">
+                                                        <span class="LicTitle">Infrastructure Assessment</span>
+                                                        <span class="LicDte">Expiry Date <strong>30/11/2024</strong></span>
+                                                    </div>
+                                                    <div class="licDiv">
+                                                        <span class="LicTitle">Infrastructure Assessment</span>
+                                                        <span class="LicDte">Expiry Date <strong>30/11/2024</strong></span>
+                                                    </div>
+                                                    <div class="licDiv">
+                                                        <span class="LicTitle">Infrastructure Assessment</span>
+                                                        <span class="LicDte">Expiry Date <strong>30/11/2024</strong></span>
+                                                    </div>
+                                                    <div class="licDiv">
+                                                        <span class="LicTitle">Infrastructure Assessment</span>
+                                                        <span class="LicDte">Expiry Date <strong>30/11/2024</strong></span>
+                                                    </div>
+                                                    <div class="licDiv">
+                                                        <span class="LicTitle">Infrastructure Assessment</span>
+                                                        <span class="LicDte">Expiry Date <strong>30/11/2024</strong></span>
+                                                    </div>
+                                                    <div class="licDiv">
+                                                        <span class="LicTitle">Infrastructure Assessment</span>
+                                                        <span class="LicDte">Expiry Date <strong>30/11/2024</strong></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- bootstrap@5.3.2 -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/settings.js"></script>
+</body>
+</html>

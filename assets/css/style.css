@@ -2276,15 +2276,15 @@ body {
     }
 }
 
-.nav-tabs .nav-link{
-    background-color: #adabab;
+.nav-tabs .nav-link {
+    background-color: #444141;
     color: #fff;
 }
 .nav-tabs .nav-link{
     border:none;
 }
     .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
-        background-color: #e8e9e9;
+        background-color: #ffffff;
     }
 .mainBox{
     padding-right:4rem !important;
@@ -2313,9 +2313,22 @@ body {
 .DetailBox{
     transition:0.5s;
 }
-.ico2{
-    display:none;
-}
+    .DetailBox .nav  li {
+        position:relative;
+    }
+        .DetailBox .nav li .RestrictedBox {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            padding-top: 6px;
+            font-size: 0.7rem;
+            background-color: yellow;
+        }
+            .DetailBox .nav li .RestrictedBox:hover{
+                cursor:not-allowed;
+            }
+            .ico2 {
+                display: none;
+            }
 .ActivedownIco {
     background-color: #0dbcdc !important;
     padding-top: 1.5rem !important;
@@ -2366,3 +2379,36 @@ body {
 }
 .RestrictedBox span{
 }
+.PrtntSpan {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #ec912d;
+    border-radius: 50%;
+    margin-top: 6px;
+}
+.licDiv {
+    display: inline-block;
+    border: 1px dashed #a5a5a5;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: relative;
+    min-width: 220px;
+    margin:0 5px 5px 0;
+}
+.LicTitle {
+    position: absolute;
+    top: -13px;
+    left: 8px;
+    background-color: #fff;
+    display: inline-block;
+    padding: 1px 2px;
+    color: #343333;
+    font-weight: 500;
+}
+.LicDte {
+    color: #4a4a4a;
+}
+    .LicDte strong {
+        color: #e7381a;
+    }
