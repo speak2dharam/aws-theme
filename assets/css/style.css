@@ -2412,3 +2412,6 @@ body {
     .LicDte strong {
         color: #e7381a;
     }
+.PrtntStitle span {
+    font-size: 0.8rem;
+}
