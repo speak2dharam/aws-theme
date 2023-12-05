@@ -2284,7 +2284,8 @@ body {
     border:none;
 }
     .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
-        background-color: #ffffff;
+        /*background-color: #ffffff;*/
+        background-color: #70e3ed;
     }
 .mainBox{
     padding-right:4rem !important;
@@ -2321,7 +2322,8 @@ body {
             border-top-right-radius: 5px;
             padding-top: 6px;
             font-size: 0.7rem;
-            background-color: yellow;
+            /*background-color: yellow;*/
+            background-color: #fb9a9ae8;
         }
             .DetailBox .nav li .RestrictedBox:hover{
                 cursor:not-allowed;
@@ -2414,4 +2416,8 @@ body {
     }
 .PrtntStitle span {
     font-size: 0.8rem;
+    color: #646363;
+}
+.tab-content {
+    background-color: whitesmoke;
 }
